@@ -98,10 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48CC1BE629D624310064EE47 /* Build configuration list for PBXNativeTarget "PortfolioApp" */;
 			buildPhases = (
+				48BC2AA829D97C1F00BA0927 /* R.Swift */,
 				AC1AACE09B63C3970EF1E37C /* [CP] Check Pods Manifest.lock */,
 				48CC1BCE29D624300064EE47 /* Sources */,
 				48CC1BCF29D624300064EE47 /* Frameworks */,
 				48CC1BD029D624300064EE47 /* Resources */,
+				48BC2AA729D9783500BA0927 /* SwiftLint */,
 				365233A9E39F72AC9244A391 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -176,6 +178,44 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PortfolioApp/Pods-PortfolioApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		48BC2AA729D9783500BA0927 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		48BC2AA829D97C1F00BA0927 /* R.Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.Swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
 		AC1AACE09B63C3970EF1E37C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
