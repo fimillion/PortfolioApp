@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4842780E29DB79C8004E5C6C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842780D29DB79C8004E5C6C /* R.generated.swift */; };
 		48CC1BD629D624300064EE47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CC1BD529D624300064EE47 /* AppDelegate.swift */; };
 		48CC1BD829D624300064EE47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CC1BD729D624300064EE47 /* SceneDelegate.swift */; };
 		48CC1BDA29D624300064EE47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CC1BD929D624300064EE47 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		0978E5D00C86301D8243B4CF /* Pods_PortfolioApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PortfolioApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4842780D29DB79C8004E5C6C /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		48CC1BD229D624300064EE47 /* PortfolioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PortfolioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48CC1BD529D624300064EE47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48CC1BD729D624300064EE47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				48CC1BDE29D624310064EE47 /* Assets.xcassets */,
 				48CC1BE029D624310064EE47 /* LaunchScreen.storyboard */,
 				48CC1BE329D624310064EE47 /* Info.plist */,
+				4842780D29DB79C8004E5C6C /* R.generated.swift */,
 			);
 			path = PortfolioApp;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				48CC1BDA29D624300064EE47 /* ViewController.swift in Sources */,
 				48CC1BD629D624300064EE47 /* AppDelegate.swift in Sources */,
 				48CC1BD829D624300064EE47 /* SceneDelegate.swift in Sources */,
+				4842780E29DB79C8004E5C6C /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
