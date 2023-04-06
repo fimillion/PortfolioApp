@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4805012829DD43DA009AA860 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4805012729DD43DA009AA860 /* User.swift */; };
+		4805012A29DD4498009AA860 /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4805012929DD4498009AA860 /* UserPresenter.swift */; };
 		4842780E29DB79C8004E5C6C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842780D29DB79C8004E5C6C /* R.generated.swift */; };
 		48CC1BD629D624300064EE47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CC1BD529D624300064EE47 /* AppDelegate.swift */; };
 		48CC1BD829D624300064EE47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CC1BD729D624300064EE47 /* SceneDelegate.swift */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		0978E5D00C86301D8243B4CF /* Pods_PortfolioApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PortfolioApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4805012729DD43DA009AA860 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4805012929DD4498009AA860 /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
 		4842780D29DB79C8004E5C6C /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		48CC1BD229D624300064EE47 /* PortfolioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PortfolioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48CC1BD529D624300064EE47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +65,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		4805012629DD43AC009AA860 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				4805012729DD43DA009AA860 /* User.swift */,
+				4805012929DD4498009AA860 /* UserPresenter.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
 		48CC1BC929D624300064EE47 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +95,7 @@
 		48CC1BD429D624300064EE47 /* PortfolioApp */ = {
 			isa = PBXGroup;
 			children = (
+				4805012629DD43AC009AA860 /* Users */,
 				48CC1BD529D624300064EE47 /* AppDelegate.swift */,
 				48CC1BD729D624300064EE47 /* SceneDelegate.swift */,
 				48CC1BD929D624300064EE47 /* ViewController.swift */,
@@ -253,7 +267,9 @@
 				48CC1BDA29D624300064EE47 /* ViewController.swift in Sources */,
 				48CC1BD629D624300064EE47 /* AppDelegate.swift in Sources */,
 				48CC1BD829D624300064EE47 /* SceneDelegate.swift in Sources */,
+				4805012829DD43DA009AA860 /* User.swift in Sources */,
 				4842780E29DB79C8004E5C6C /* R.generated.swift in Sources */,
+				4805012A29DD4498009AA860 /* UserPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
