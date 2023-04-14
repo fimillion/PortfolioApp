@@ -8,9 +8,10 @@ final class UsersViewController: UITableViewController {
         super.viewDidLoad()
         presenter.view = self
         title = "Users"
+        tableView.register(UINib(nibName: "UserViewCell", bundle: nil), forCellReuseIdentifier: "UserViewCell")
         tableView.refreshControl = UIRefreshControl()
         tableView.refreshControl?.addTarget(self, action: #selector(onRefresh), for: .valueChanged)
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
+        tableView.rowHeight = UITableView.automaticDimension
         onRefresh()
     }
     
@@ -28,9 +29,9 @@ final class UsersViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "UserViewCell", for: indexPath) as! UserViewCell
         let user = users[indexPath.row]
-        cell.textLabel?.text = user.name
+        cell.setup(with: user)
         return cell
     }
 }

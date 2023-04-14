@@ -27,9 +27,9 @@ final class UserPresenter {
                 })
             } catch {
                 DispatchQueue.main.async {
+                    print("PARSING_ERROR \(error)")
                     self.view?.display(isLoding: false)
-                }
-            }
+                }            }
         }
         task.resume()
     }
