@@ -7,7 +7,10 @@ final class UsersViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Users"
-        tableView.register(UINib(nibName: "UserViewCell", bundle: nil), forCellReuseIdentifier: "UserViewCell")
+        tableView.register(
+            UINib(nibName: String(describing: UserViewCell.self), bundle: nil),
+            forCellReuseIdentifier: String(describing: UserViewCell.self)
+        )
         tableView.refreshControl = UIRefreshControl()
         tableView.refreshControl?.addTarget(self, action: #selector(onRefresh), for: .valueChanged)
         tableView.rowHeight = UITableView.automaticDimension
@@ -28,7 +31,7 @@ final class UsersViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "UserViewCell", for: indexPath) as! UserViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: UserViewCell.self), for: indexPath) as! UserViewCell
         let user = users[indexPath.row]
         cell.setup(with: user)
         return cell
