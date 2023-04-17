@@ -1,1 +1,6 @@
-"User.username" = "ім'я користувача";
+"User.username" = "ім'я";
+"User.email" = "email";
+"User.phone" = "телефон";
+"User.website" = "веб-сайт";
+"User.company" = "компанія";
+"User.address" = "адреса";

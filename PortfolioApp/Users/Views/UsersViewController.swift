@@ -6,7 +6,6 @@ final class UsersViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter.view = self
         title = "Users"
         tableView.register(UINib(nibName: "UserViewCell", bundle: nil), forCellReuseIdentifier: "UserViewCell")
         tableView.refreshControl = UIRefreshControl()

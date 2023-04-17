@@ -20,9 +20,9 @@ final class UserPresenter {
         let task = session.dataTask(with: request) { data, _, _ in
             guard let data = data else { return }
             do {
-                let result = try JSONDecoder().decode(UsersResult.self, from: data)
+                let result = try JSONDecoder().decode([User].self, from: data)
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
-                    self.view?.display(result.users)
+                    self.view?.display(result)
                     self.view?.display(isLoding: false)
                 })
             } catch {

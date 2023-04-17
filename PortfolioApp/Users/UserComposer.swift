@@ -4,7 +4,7 @@ final class UserComposer {
     
     static func build () -> UIViewController {
         let presenter = UserPresenter()
-        let controller = UsersViewController(nibName: "UsersViewController", bundle: nil)
+        let controller = UsersViewController()
         controller.presenter = presenter
         presenter.view = controller
         return controller
