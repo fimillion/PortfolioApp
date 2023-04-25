@@ -20,10 +20,10 @@ final class UserPresenter {
             guard let data = data else { return }
             do {
                 let result = try JSONDecoder().decode([User].self, from: data)
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+                DispatchQueue.main.async {
                     self.view?.display(result)
                     self.view?.display(isLoding: false)
-                })
+                }
             } catch {
                 DispatchQueue.main.async {
                     print("PARSING_ERROR \(error)")
