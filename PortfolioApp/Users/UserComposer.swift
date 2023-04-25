@@ -2,7 +2,7 @@ import UIKit
 
 final class UserComposer {
     
-    static func build () -> UIViewController {
+    static func build() -> UIViewController {
         let presenter = UserPresenter()
         let controller = UsersViewController()
         controller.presenter = presenter
