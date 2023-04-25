@@ -42,6 +42,7 @@ final class UsersViewController: UITableViewController {
 }
 
 extension UsersViewController: UsersView {
+    
     func display(_ users: [User]) {
         self.users = users
         tableView.reloadData()
