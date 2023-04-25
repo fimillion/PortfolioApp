@@ -6,7 +6,7 @@ protocol UsersView: AnyObject {
 }
 
 final class UserPresenter {
-    weak  var view: UsersView?
+    weak var view: UsersView?
     
     func getUsers() {
         view?.display(isLoding: true)
