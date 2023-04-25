@@ -10,11 +10,10 @@ final class UserPresenter {
     
     func getUsers() {
         view?.display(isLoding: true)
-        let url = URL(string: "https://jsonplaceholder.typicode.com/users")
-        guard url != nil else {
+        guard let url = URL(string: "https://jsonplaceholder.typicode.com/users") else {
             return
         }
-        var request = URLRequest(url: url!)
+        var request = URLRequest(url: url)
         request.httpMethod = "GET"
         let session = URLSession(configuration: .default)
         let task = session.dataTask(with: request) { data, _, _ in
