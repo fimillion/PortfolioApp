@@ -18,7 +18,7 @@ final class UserViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {}
     
     func setup(with user: User) {
@@ -31,6 +31,8 @@ final class UserViewCell: UITableViewCell {
         self.phoneText.text = user.phone
         self.websiteText.text = user.website
         self.companyText.text = user.company.name
-        self.addressText.text = "\(user.address.city), \(user.address.street), \(user.address.suite), \(user.address.zipcode)"
+        self.addressText.text = """
+            \(user.address.city), \(user.address.street), \(user.address.suite), \(user.address.zipcode)
+            """
     }
 }

@@ -31,7 +31,10 @@ final class UsersViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: UserViewCell.self), for: indexPath) as! UserViewCell
+        let cell = tableView.dequeueReusableCell(
+            withIdentifier: String(describing: UserViewCell.self),
+            for: indexPath
+        ) as! UserViewCell
         let user = users[indexPath.row]
         cell.setup(with: user)
         return cell
