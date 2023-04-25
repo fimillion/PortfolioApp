@@ -22,8 +22,6 @@ final class UserViewCell: UITableViewCell {
         self.phoneLabel.text = R.string.texts.userPhone()
     }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {}
-    
     func setup(with user: User) {
         self.userNameText.text = user.name
         self.userNiknameText.text = user.username
