@@ -2,7 +2,7 @@ import UIKit
 
 final class UsersViewController: UITableViewController {
     var presenter: UserPresenter!
-    var users: [User] = []
+    private var users: [User] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
