@@ -17,14 +17,14 @@ final class UserViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.userNiknameLabel.text = R.string.texts.userUsername()
+        self.emailLabel.text = R.string.texts.userEmail()
+        self.phoneLabel.text = R.string.texts.userPhone()
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {}
     
     func setup(with user: User) {
-        self.userNiknameLabel.text = R.string.texts.userUsername()
-        self.emailLabel.text = R.string.texts.userEmail()
-        self.phoneLabel.text = R.string.texts.userPhone()
         self.userNameText.text = user.name
         self.userNiknameText.text = user.username
         self.emailText.text = user.email
